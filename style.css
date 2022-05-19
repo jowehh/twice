@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300;8..144,400&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Flex', sans-serif;
+    
+}
+body{
+    background-color: #fff;
+}
+
+/* Particle JS */
+#particles-js
+{ 
+    
+    position: fixed;
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: -1;
+    
+}
+@media screen and (max-width: 768px)
+{
+    #particles-js
+    {
+        height: 100%;
+    }
+}
+
+/* Twice */
+.grid-item{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    padding: 5rem;
+    z-index: 999;
+}
+.grid-item img{
+    width: 100%;
+    height: auto;
+    background-color: #a8bfe0;
+
+}
+.grid-item .context{
+    margin-top: 2rem;
+}
+.grid-item .context p{
+    margin: 1rem;
+    line-height: 2rem;
+}
+.grid-item .context h1{
+    margin-left: 1rem;
+}
+@media screen and (max-width: 768px)
+{
+    .grid-item{
+        display: grid;
+        grid-template-columns: auto;
+        padding: 1rem;
+    }
+    .grid-item img{
+        width: 100%;
+        height: auto;
+    }
+    .grid-item .context{
+        margin-top: 1rem;
+    }
+    .grid-item .context p{
+        margin: 1rem;
+    }
+    .grid-item .context h1{
+        margin-left: 1rem;
+    }
+}
+
+/*Mina-Right*/
+.grid-item-right{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    padding: 4rem;
+    z-index: 999;
+}
+.image img{
+    width: 100%;
+    height: auto;
+    background-color: #a8bfe0;
+
+}
+.grid-item-right .context-right{
+    margin-top: 2rem;
+}
+.context-right p{
+    margin: 1rem;
+    line-height: 2rem;
+}
+.grid-item-right .context-right h1{
+    margin-left: 1rem;
+}
+/*Media Queries*/
+@media screen and (max-width: 768px)
+{
+    .grid-item-right{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 1rem;
+    }
+    .image img
+    {
+        width: 100%;
+        height: auto;
+    }
+    .grid-item-right .context-right{
+        margin-top: 1rem;
+    }
+    .grid-item-right .context-right p{
+        margin: 1rem;
+    }
+    .grid-item-right .context-right h1{
+        margin-left: 1rem;
+    }
+}
+
+
+
+/*Dark Mode*/
+.moon img {
+    position: fixed;
+    bottom: 15px;
+    left: 20px;
+    width: 30px;
+    cursor: pointer;
+    z-index: 999;
+
+  }
+
+  @media screen and (max-width: 750px) {
+    .moon img {
+      position: fixed;
+      bottom: 25px;
+      left: 20px;
+      width: 30px;
+      cursor: pointer;
+    }
+
+  }
+
+  .dark-mode {
+    background-color: #121212;
+    color: white;
+  }
+
+
+    
